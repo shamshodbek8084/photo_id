@@ -1,0 +1,7 @@
+django-5.2
+pillow-11.1.0
+cmake version 4.0.0
+Python 3.12.3
+
+Name: deepface
+Version: 0.0.93

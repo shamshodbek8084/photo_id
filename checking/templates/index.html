@@ -1,0 +1,14 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Yuzni tanish</button>
+  </form>
+  
+  {% if result %}
+    <h2>Topilgan shaxs: {{ result.name }}</h2>
+    <img src="{{ result.image.url }}" width="150">
+    <p>{{ result.bio }}</p>
+  {% elif not_found %}
+    <p>Shaxs aniqlanmadi.</p>
+  {% endif %}
+  
